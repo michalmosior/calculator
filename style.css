@@ -1,0 +1,136 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Orbitron', sans-serif;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #7f7fd5;
+	background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+	background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	max-width: 600px;
+	background-color: hsl(222, 26%, 31%);
+	border-radius: 25px;
+	margin: 0 auto;
+	background: #000046;
+	background: -webkit-linear-gradient(to right, #1cb5e0, #000046);
+	background: linear-gradient(to right, #1cb5e0, #000046);
+
+	-webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+	-moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+	box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.score {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 5rem;
+	width: 90%;
+	background: rgba(255, 255, 255, 0.45);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(12.5px);
+	-webkit-backdrop-filter: blur(12.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	color: white;
+	border-radius: 10px;
+	text-align: right;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.display,
+.previous {
+	width: 90%;
+	color: white;
+	text-align: right;
+	border: none;
+}
+.display {
+	font-size: 2rem;
+}
+.keyboard {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 0.5rem;
+	row-gap: 0.5rem;
+	background: #0f0c29;
+	background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+	background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	padding: 1rem;
+}
+
+.btn {
+	width: 23%;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	padding: 0.5rem;
+	cursor: pointer;
+	border: none;
+	border-radius: 25px;
+	transition: background-color 0.3s;
+}
+.btn:hover {
+	background-color: rgb(210, 208, 208);
+}
+
+.reset,
+.equal {
+	color: white;
+	width: 48%;
+	border-radius: 25px;
+}
+
+.equal {
+	background-color: hsl(6, 63%, 50%);
+	font-size: 1.2rem;
+}
+.equal:hover {
+	background-color: hsl(6, 61%, 43%);
+}
+.del,
+.reset {
+	background-color: hsl(225, 21%, 49%);
+	color: white;
+	font-size: 1.2rem;
+}
+
+.del:hover,
+.reset:hover {
+	background-color: hsl(226, 20%, 34%);
+}
+
+@media (min-width: 576px) {
+	.score {
+		height: 6rem;
+	}
+	.display {
+		font-size: 2.4rem;
+	}
+	.previous {
+		font-size: 1.6rem;
+	}
+	.btn {
+		font-size: 2rem;
+	}
+	.del,
+	.reset {
+		font-size: 1.8rem;
+	}
+}
